@@ -1,0 +1,283 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    width: 450px;  /* Fixed width */
+    height: 450px; /* Fixed height to make it a perfect square */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute elements evenly */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center the text for visual alignment */
+    margin: 0; /* Center the container, no additional margin */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold; /* Make heading text bolder */
+}
+
+p {
+    color: #555;
+    font-size: 18px; /* Increase font size for readability */
+    font-weight: 600; /* Slightly bolder text */
+}
+ 
+/* Timer Styling */
+.timer {
+    color: red; /* Set the timer text color to red */
+    font-weight: bold; /* Make the timer text bold */
+    font-size: 24px; /* Increase the font size for better visibility */
+    text-align: center; /* Center the timer */
+    margin-top: 20px; /* Add spacing above the timer */
+}
+
+/* Blinking effect when time is about to run out */
+.timer.warning {
+    animation: blink 1s step-start 0s infinite; /* Blinking effect */
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0; /* Half-second visibility toggle */
+    }
+}
+
+
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Even spacing between form elements */
+    width: 100%; /* Full width within the container */
+}
+
+label {
+    color: #555;
+    font-size: 16px; /* Increase label size */
+    text-align: left;
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px; /* Increase padding for better accessibility */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-weight: bold; /* Bold submit button text */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Manage Exam Page Adjustments */
+.manage-exam-container {
+    max-width: 1200px; /* Wider for larger content */
+    min-height: 800px; /* Increased height */
+    padding: 30px;     /* Added padding for breathing room */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto; /* Center the container with auto margins */
+    overflow: auto;    /* Enable scrolling if the content exceeds the container height */
+}
+
+.manage-exam-header {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-question-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.add-question-form h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.add-question-form input[type="submit"] {
+    background-color: #28a745;
+}
+
+.add-question-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.question-list {
+    max-height: 600px; /* Increased max height for larger question lists */
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.question-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.question-list th,
+.question-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.question-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.question-list td {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.question-list a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.question-list a:hover {
+    text-decoration: underline;
+}
+
+
+.error-message,
+.success-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold; /* Bold for better readability */
+}
+
+
+/* Links Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; /* Make links bolder */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Center the text and add margin for spacing */
+.small-text {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 15px;
+    font-weight: bold; /* Make small text bolder */
+}
+
+/* Fixed Next Button Styling */
+.fixed-next-btn {
+    position: fixed;
+    bottom: 20px; /* 20px from the bottom of the screen */
+    right: 20px;  /* 20px from the right edge of the screen */
+    width: 120px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px; /* Center the text vertically */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.fixed-next-btn:hover {
+    background-color: #0056b3;
+}
+
+.fixed-next-btn:active {
+    background-color: #004085;
+}
+
+/* Fixed Previous Button Styling */
+.fixed-prev-btn {
+    position: fixed;
+    bottom: 20px; /* 20px from the bottom of the screen */
+    left: 20px;   /* 20px from the left edge of the screen */
+    width: 120px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    background-color: #6c757d; /* Secondary button color (gray) */
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px; /* Center the text vertically */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.fixed-prev-btn:hover {
+    background-color: #5a6268;
+}
+
+.fixed-prev-btn:active {
+    background-color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manage-exam-container {
+        max-width: 100%; /* Responsive width */
+        min-height: auto;
+        padding: 20px;
+    }
+
+}

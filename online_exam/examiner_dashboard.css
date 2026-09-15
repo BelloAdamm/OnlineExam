@@ -1,0 +1,142 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header styling */
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2d98da;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Form styling for creating new exams */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #2d98da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #227093;
+}
+
+/* Styling for the exam list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2d98da;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #227093;
+}
+
+/* Logout button */
+a.logout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a.logout:hover {
+    background-color: #e84118;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    form input[type="text"] {
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    form button, a.logout {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
